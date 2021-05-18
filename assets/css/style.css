@@ -24,7 +24,7 @@ body {
 }
 
 .content {
-    margin: 16px;
+    padding: 16px;
 }
 
 .header a {
@@ -34,12 +34,15 @@ body {
 
 .header {
     display: flex;
-    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     height: 56px;
+    padding: 0 16px 0 16px;
 }
 
 .menu-search {
-    width: 100%;
     text-align: right;
 }
 
@@ -69,11 +72,14 @@ body {
     width: 100%;
     padding: 16px;
     font-size: 16px;
-    background:#5081FB;
-    opacity: 0.2;
+    background: rgba(80,129,251, 0.2);
     color: #FFFFFF;
     border: none;
     font-weight: 500;
+}
+
+.btn-primary::placeholder{
+    color: #fff;
 }
 
 #project {
@@ -90,19 +96,20 @@ h1 {
     letter-spacing: 0.4em;
 }
 
+.control::placeholder {
+    color: rgba(255,255,255, 0.5);
+}
+
 .control {
     width: 100%;
     border: none;
-    color: #FFFFFF;
     font-size: 16px;
     padding: 16px;
+    color: rgba(255, 255, 255, 0.4);
     background: rgba(255,255,255,0.2);
 }
 
-.select {
-    color: #333;
-    font-weight: 400;
-}
+option { background: var(--bgcolor); color: #fff; border: none; padding: 8px }
 
 #project input {margin-bottom: 16px;}
 
@@ -110,13 +117,24 @@ h1 {
     width: 100%;
 }
 
-.btn-code-color {
+.color-editor {
+    width: 100%;
+    border: 1px solid #FFF;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 24px 0 32px 0;
+}
+
+.color-editor > button {
+    margin: 0;
+    padding: 0;
     height: 40px;
     border: none;
     font-size: 16px;
     width: 100%;
     background: var(--btncontainer);
-    margin: 24px 0 32px 0;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 .btn-success  {
@@ -128,4 +146,8 @@ h1 {
     width: 100%;
     color: #051D3B;
     font-weight: 400;
+}
+
+button:hover{
+    cursor: pointer;
 }
