@@ -87,7 +87,7 @@ body {
     margin-bottom: 40px;
 }
 
-h1 {
+.title {
     padding-bottom: 16px;
     text-transform: uppercase;
     font-weight: 400;
@@ -146,6 +146,9 @@ option { background: var(--bgcolor); color: #fff; border: none; padding: 8px }
     width: 100%;
     color: #051D3B;
     font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 button:hover{

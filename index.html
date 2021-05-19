@@ -6,8 +6,17 @@
     <title>AluraDev</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/menu.css" rel="stylesheet" />
   </head>
   <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    
     <div class="content">
       <header class="header">
         <div class="logo">
@@ -17,10 +26,10 @@
         </div>
         <div class="menu-search">
           <button><i class="fa fa-search"></i></button>
-          <button><i class="fa fa-navicon"></i></button>
+          <button onclick="openNav()"><i class="fa fa-navicon"></i></button>
         </div>
       </header>
-      <main class="content">
+      <main>
         <section id="code">
           <div class="code-container">
             <div class="code-text">
@@ -31,13 +40,13 @@
         </section>
 
         <section id="project">
-          <h1>Seu Projeto</h1>
+          <h1 class="title">Seu Projeto</h1>
           <input type="text" class="control" placeholder="Nome do projeto" />
           <textarea rows="5" class="control" placeholder="Descrição do seu projeto"></textarea>
         </section>
 
         <section id="peronalization">
-          <h1>Personalização</h1>
+          <h1 class="title">Personalização</h1>
           <select class="control">
             <option value="1">Javascript</option>
             <option value="2">Java</option>
@@ -48,9 +57,10 @@
             <button id="color-editor"></button>
           </div>
         </section>
-        <button class="btn-success">Salvar Projeto</button>
+        <a href="posts.html" id="salvar" class="btn-success">Salvar Projeto</a>
       </main>
       <footer class="footer"></footer>      
     </div>
+    <script src="./assets/js/menu.js" ></script>
   </body>
 </html>

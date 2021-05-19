@@ -1,0 +1,38 @@
+.media-posts {
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    align-items: baseline;
+}
+
+.post-description{
+    padding: 0 16px;
+    padding-bottom: 32px;
+}
+
+.code {
+    background: rgba(0,0,0, 0.5);
+}
+
+.medias a {
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: white;
+    height: 24px;
+    align-self: center;
+    font-size: 16px;
+}
+
+.medias i {
+    font-size: 16px;
+}
+
+.medias img { border-radius: 50%; height: 24px; width: 24px; margin-right: 5px;}
+
+.medias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between  ;
+}
