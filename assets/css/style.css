@@ -1,6 +1,7 @@
 :root{
     --bgcolor: #051D3B;
     --btncontainer: #6BD1FF;
+    --bgcontainer-secondary: #FF6BCD;
 }
 
 * {
@@ -149,8 +150,4 @@ option { background: var(--bgcolor); color: #fff; border: none; padding: 8px }
     display: inline-block;
     text-decoration: none;
     text-align: center;
-}
-
-button:hover{
-    cursor: pointer;
 }

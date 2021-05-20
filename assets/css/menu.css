@@ -1,22 +1,25 @@
 /* The sidepanel menu */
 .sidepanel {
-    height: 100vh; /* Specify a height */
+    height: 571px; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #051D3B; /* Black*/
+    background-color: #2D415B; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 60px;  /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    border-radius: 13px;
+    margin-top: 100px;
+    margin-left: 110px;
   }
   
   /* The sidepanel links */
   .sidepanel a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 16px 32px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -48,4 +51,44 @@
   
   .openbtn:hover {
     background-color: #444;
+  }
+
+  .icon-menu {
+    background: #333;
+    padding: 16px 14px;
+    color: white;
+    border-radius: 16px;
+  }
+  .icon-code-color {
+    background: #5081FB;
+  }
+
+  .icon-group-color {
+    background: rgba(80, 129, 251, 0.16);
+  }
+
+  .avatar {
+    font-size: 16px;
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    vertical-align: middle;
+  }
+
+  .avatar:hover {
+    background: #fff;
+  }
+
+  .avatar span {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  .foto-avatar {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
   }
