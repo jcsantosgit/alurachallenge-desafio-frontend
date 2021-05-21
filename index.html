@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./assets/css/style.css" rel="stylesheet" />
     <link href="./assets/css/menu.css" rel="stylesheet" />
+    <link href="./assets/css/search.css" rel="stylesheet" />
   </head>
   <body>
     
@@ -15,18 +16,24 @@
       <!-- Menu -->
       <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">
-        <i class="fa fa-code icon-menu icon-code-color"></i> Editor de código
-        </a>
-        <a href="#">
-          <span><i class="fa fa-group icon-menu icon-group-color"></span></i> Comunidade
-        </a>
-        <a href="">
+
+        <a href="" class="avatar">
+          <span>
+            <img src="./assets/images/joao.png" class="foto-avatar" alt="foto perfil" /> 
+          </span>
+          <span>João Santos</span>
+        </a>     
+
+        <a>
           <div style="height: 1px; background: #fff; opacity: 0.08;"></div>
         </a>
-        <a href="" class="avatar">
-          <img src="./assets/images/joao.png" class="foto-avatar" /> <span>João</span>
-        </a>      
+
+        <a href="index.html">
+        <i class="fa fa-code icon-menu icon-code-color"></i> Editor de código
+        </a>
+        <a href="posts.html">
+          <span><i class="fa fa-group icon-menu icon-group-color"></span></i> Comunidade
+        </a>     
       </div>
 
       <header class="header">
@@ -35,8 +42,12 @@
             <img src="./assets/images/aluradev.svg">
           </a>          
         </div>
+        <div class="search">
+          <input type="text">
+          <i id="close-search" class="fa fa-close" style="font-size: 22px"></i>
+        </div>
         <div class="menu-search">
-          <button><i class="fa fa-search"></i></button>
+          <button id="btn-search"><i class="fa fa-search"></i></button>
           <button onclick="openNav()"><i class="fa fa-navicon"></i></button>
         </div>
       </header>
@@ -73,5 +84,14 @@
       <footer class="footer"></footer>      
     </div>
     <script src="./assets/js/menu.js" ></script>
+    <script>
+      document.querySelector('#close-search').addEventListener('click', function(){
+        document.querySelector('.search').style = 'margin-top: -100px'
+      });
+
+      document.querySelector('#btn-search').addEventListener('click', function(){
+        document.querySelector('.search').style = 'margin-top: 0'
+      });
+    </script>
   </body>
 </html>
