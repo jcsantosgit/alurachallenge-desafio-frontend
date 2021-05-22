@@ -75,11 +75,10 @@
   .avatar span { font-size: 18px;}
 
 
-  .foto-avatar {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    padding: 2px;    
-  }
-
+.foto-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding: 1px;    
+}

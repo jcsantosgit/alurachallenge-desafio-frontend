@@ -1,0 +1,41 @@
+@media only screen and (min-width: 768px) {
+    .content {
+        padding: 32px;
+    }
+
+    .search {
+        position: relative;
+        background-color: var(--bgcolor);
+        border: none;
+        margin: 0;
+        margin-left: 40px;
+        transition: 0s;
+    }
+
+    .search input[type='text']{
+        padding: 0;
+        height: 56px;
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 8px;
+        transition: 0s;
+    }
+
+    .personalization-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .color-editor {
+        padding: 0;
+    }
+
+    .btn-success {
+        display: inline-block;
+        height: 45px;
+    }
+
+    #close-search {
+        display: none;
+        width: 0;
+    }
+}
