@@ -35,8 +35,41 @@
         flex-direction: row;
         column-gap: 10px;
     }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .main {
+        display: grid;
+        grid-template-columns: 20% 50% 25%;
+        column-gap: 2%;
+        box-sizing: border-box;
+    }
 
     .sidepanel {
         position: relative;
+        width: 100%;
+        background-color: var(--bgcolor);
+        max-width: 300px;
+    }
+ 
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+    }    
+
+    #peronalization {
+        display: flex ;
+        flex-direction: column;
+    }
+
+    .personalization-controls {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .closebtn {
+        display: none !important;
     }
 }

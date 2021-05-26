@@ -31,29 +31,29 @@
 
       <main class="main">
       
-      <section>
-        <nav id="mySidepanel" class="sidepanel">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-          <a href="" class="avatar">
-            <span>
-              <img src="./assets/images/joao.png" class="foto-avatar" alt="foto perfil" /> 
-            </span>
-            <span>João Santos</span>
-          </a>     
-  
-          <a>
-            <div style="height: 1px; background: #fff; opacity: 0.08;"></div>
-          </a>
-  
-          <a href="index.html">
-            <i class="fa fa-code icon-menu icon-code-color"></i> Editor de código
-          </a>
-          <a href="posts.html">
-            <span><i class="fa fa-group icon-menu icon-group-color"></span></i> Comunidade
-          </a>     
-        </nav>        
-      </section>
+        <section id="menu">
+          <nav id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+            <a href="" class="avatar">
+              <span>
+                <img src="./assets/images/joao.png" class="foto-avatar" alt="foto perfil" /> 
+              </span>
+              <span>João Santos</span>
+            </a>     
+    
+            <a>
+              <div style="height: 1px; background: #fff; opacity: 0.08;"></div>
+            </a>
+    
+            <a href="index.html">
+              <i class="fa fa-code icon-menu icon-code-color"></i> Editor de código
+            </a>
+            <a href="posts.html">
+              <span><i class="fa fa-group icon-menu icon-group-color"></span></i> Comunidade
+            </a>     
+          </nav>        
+        </section>
 
         <section id="code">
           <div class="code-container">
@@ -64,28 +64,31 @@
           <button class="btn-primary">Visualizar com o highlight</button>
         </section>
 
-        <section id="project">
-          <h1 class="title">Seu Projeto</h1>
-          <input type="text" class="control" placeholder="Nome do projeto" />
-          <textarea rows="5" class="control" placeholder="Descrição do seu projeto"></textarea>
-        </section>
-
-        <section id="peronalization">
-          <h1 class="title">Personalização</h1>
-          <div class="personalization-controls">
-            <select class="control">
-              <option value="1">Javascript</option>
-              <option value="2">Java</option>
-              <option value="3">C#</option>
-              <option value="4">SQL</option>
-            </select>
-            <div class="btn-container">
-              <button class="colors"><span></span></button>
-              <button id="salvar" class="btn-success">Salvar Projeto</button>
+        <section id="projects">
+          <section id="project">
+            <h1 class="title">Seu Projeto</h1>
+            <input type="text" class="control" placeholder="Nome do projeto" />
+            <textarea rows="5" class="control" placeholder="Descrição do seu projeto"></textarea>
+          </section>
+  
+          <section id="peronalization">
+            <h1 class="title">Personalização</h1>
+            <div class="personalization-controls">
+              <select class="control">
+                <option value="1">Javascript</option>
+                <option value="2">Java</option>
+                <option value="3">C#</option>
+                <option value="4">SQL</option>
+              </select>
+              <div class="btn-container">
+                <button class="colors"><span></span></button>
+                <button id="salvar" class="btn-success">Salvar Projeto</button>
+              </div>
             </div>
-          </div>
+          </section>
         </section>
       </main>
+
       <footer class="footer"></footer>      
     </div>
     <script src="./assets/js/menu.js" ></script>
