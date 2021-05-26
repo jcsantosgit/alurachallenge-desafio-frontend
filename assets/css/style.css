@@ -118,25 +118,34 @@ option { background: var(--bgcolor); color: #fff; border: none; padding: 8px }
     width: 100%;
 }
 
-.color-editor {
-    width: 100%;
-    border: 1px solid #FFF;
-    padding: 8px;
-    border-radius: 8px;
-    margin: 24px 0 32px 0;
+.personalization-controls {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
-.color-editor > button {
-    margin: 0;
-    padding: 0;
-    height: 40px;
-    border: none;
-    font-size: 16px;
+.colors {
+    border: 1px solid #fff;
     width: 100%;
-    background: var(--btncontainer);
-    list-style: none;
+    padding: 8px;
+    background: var(--bgcolor);
+    border-radius: 8px;
     box-sizing: border-box;
 }
+
+.colors span {
+    display: block;
+    padding: 16px;
+    background-color: #6BD1FF;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.colors span:hover {
+    cursor: pointer;
+}
+
 
 .btn-success  {
     border: none;
@@ -150,4 +159,10 @@ option { background: var(--bgcolor); color: #fff; border: none; padding: 8px }
     display: inline-block;
     text-decoration: none;
     text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }

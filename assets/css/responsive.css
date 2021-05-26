@@ -20,15 +20,6 @@
         transition: 0s;
     }
 
-    .personalization-buttons {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .color-editor {
-        padding: 0;
-    }
-
     .btn-success {
         display: inline-block;
         height: 45px;
@@ -37,5 +28,15 @@
     #close-search {
         display: none;
         width: 0;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .sidepanel {
+        position: relative;
     }
 }
