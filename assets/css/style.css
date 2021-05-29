@@ -168,3 +168,7 @@ option { background: var(--bgcolor); color: #fff; border: none; padding: 8px }
     flex-direction: column;
     row-gap: 10px;
 }
+
+#search {
+    padding-left: 15px;
+}

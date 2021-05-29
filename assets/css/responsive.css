@@ -72,4 +72,8 @@
     .closebtn {
         display: none !important;
     }
+
+    .menu-search {
+        display: none;
+    }
 }
